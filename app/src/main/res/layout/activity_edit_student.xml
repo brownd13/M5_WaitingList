@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".editStudentAct">
+
+    <TextView
+        android:id="@+id/tvStudents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:padding="4dp"
+        android:layout_margin="16dp"
+        android:textColor="@color/black"
+        android:text="@string/editStudent" />
+
+    <EditText
+        android:id="@+id/etStudentName"
+        android:hint="Full Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/etStudentID"
+        android:hint="Student ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+    <Spinner
+        android:id="@+id/spPriority"
+        android:hint="Priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:prompt="@string/selPriority"
+        />
+
+    <Button
+        android:id="@+id/buEditStudent"
+        android:onClick="editStudentRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:text="@string/buSave"
+        android:textSize="24sp"
+        >
+    </Button>
+    <Button
+        android:id="@+id/buBack"
+        android:onClick="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:text="@string/back"
+        android:textSize="24sp"
+        >
+    </Button>
+
+</LinearLayout>

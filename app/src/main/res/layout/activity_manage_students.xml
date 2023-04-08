@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ManageStudents">
+
+    <TextView
+        android:id="@+id/tvStudents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:text="@string/mngStudents" />
+
+    <ListView
+        android:id="@+id/student_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="4"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/buAddStudent"
+            android:onClick="addStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/buAddStudent"
+            android:textSize="20sp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/buEditStudents"
+            android:onClick="editStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/buEditStudent"
+            android:textSize="20sp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/buRemStudent"
+            android:onClick="removeStudentRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/buRemStudent"
+            android:textSize="20sp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:textColor="@color/red"
+        android:text="@string/remStudWarn" />
+
+    <Button
+        android:id="@+id/buBack"
+        android:onClick="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:text="@string/back"
+        android:textSize="24sp"
+        >
+    </Button>
+
+</LinearLayout>

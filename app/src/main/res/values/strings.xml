@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">M5_WaitingList</string>
+    <string name="title">Registration - Wait List Manager</string>
+    <string name="back">Back</string>
+    <string name="buStudents">Students</string>
+    <string name="mngStudents">Manage Students</string>
+    <string name="buAddStudent">Add\nStudent</string>
+    <string name="addStudent">Create Student Record</string>
+    <string name="selPriority">Priority</string>
+    <string name="buEditStudent">Edit\nStudent</string>
+    <string name="buSave">Save</string>
+    <string name="editStudent">Edit Student Record</string>
+    <string name="buRemStudent">Remove\nStudent</string>
+    <string name="remStudWarn">Note: Removing student will remove them from any waitlists they are in.</string>
+    <string name="buCourses">Courses</string>
+    <string name="mngCourses">Manage Courses</string>
+    <string name="buAddCourse">Add\nCourse</string>
+    <string name="buEditCourse">Edit\nCourse</string>
+    <string name="buRemCourse">Remove\nCourse</string>
+    <string name="remCourseWarn">Note: Removing course will also clear its waitlist.</string>
+    <string name="mngWaitList">Course Waiting Lists</string>
+    <string name="addStudentsToWL">Add Student to Waiting List</string>
+    <string name="addStudentsToWLCourse">Add Student to </string>
+    <string name="buAddWL">Add to Waitlist</string>
+    <string name="buRemWL">Remove from Waitlist</string>
+    <string name="buWaitlist">Waitlist</string>
+    <string name="toMissingField">Please fill out all fields.</string>
+    <string name="toMakeSelection">Please make a selection</string>
+
+    <!-- Spinner resources-->
+    <string-array name="priority_selection">
+        <item>Freshman</item>
+        <item>Sophomore</item>
+        <item>Junior</item>
+        <item>Senior</item>
+        <item>Graduate</item>
+    </string-array>
+
+</resources>

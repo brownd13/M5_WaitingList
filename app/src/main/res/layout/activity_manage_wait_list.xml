@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ManageWaitList">
+
+
+    <TextView
+        android:id="@+id/tvWaitList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:text="@string/mngWaitList" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        >
+
+        <ListView
+            android:id="@+id/course_list"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:dividerHeight="1dp" />
+
+        <ListView
+            android:id="@+id/wait_list"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/buAddStudent"
+            android:onClick="addStudentToWLAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:text="@string/buAddStudent"
+            android:textSize="24sp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/buRemStudent"
+            android:onClick="remStudentFromWaitList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:text="@string/buRemStudent"
+            android:textSize="24sp"
+            >
+        </Button>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buBack"
+        android:onClick="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:text="@string/back"
+        android:textSize="24sp"
+        >
+    </Button>
+
+</LinearLayout>
